@@ -14,7 +14,5 @@ require "sinatra/reloader" if development?
   end
 
   get '/cat' do
-    "<div>
-      <img class='cat' src='https://i.imgur.com/jFaSxym.png' alt='A cute kitten' style='border: 3px dashed red'>
-    </div>"
+    erb(:index)
   end
